@@ -1,0 +1,7 @@
+web: bin/rails server -p 3001
+redis: redis-server
+worker: bundle exec sidekiq
+css: yarn build:css --watch
+js: yarn build --watch
+rails: tail -F log/development.log
+
